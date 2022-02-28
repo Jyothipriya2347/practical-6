@@ -2,6 +2,12 @@
 - task: CmdLine@2
   inputs:
     script: |
+      javac AddTwoNumbers JAVA.java
+      
+      java AddTwoNumbers JAVA
+- task: CmdLine@2
+  inputs:
+    script: |
       javac AddTwoNumbers JAVA java
       
       java AddTwoNumbers JAVA
